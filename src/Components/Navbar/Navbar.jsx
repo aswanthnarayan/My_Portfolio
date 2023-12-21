@@ -15,7 +15,7 @@ function Navbar() {
     <>
       <nav className={styles.navBar}>
         <div className={styles.navContainer}>
-          <NavLink exact to="/" className={styles.navLogo}>
+          <NavLink  to="/" className={styles.navLogo}>
             <span >
               <img src={logo} alt="logo" />
             </span>
@@ -26,7 +26,6 @@ function Navbar() {
           <ul className={click ? `${styles.navMenu} ${styles.active}` : styles.navMenu}>
             <li className={styles.navItem}>
               <NavLink
-                exact
                 to="/"
                 className={styles.navLinks}
                 onClick={handleClick}
@@ -36,7 +35,7 @@ function Navbar() {
             </li>
             <li className={styles.navItem}>
               <NavLink
-                exact
+                
                 to="/about"
                 className={styles.navLinks}
                 onClick={handleClick}
@@ -46,7 +45,7 @@ function Navbar() {
             </li>
             <li className={styles.navItem}>
               <NavLink
-                exact
+                
                 to="/blog"
                 className={styles.navLinks}
                 onClick={handleClick}
@@ -56,7 +55,6 @@ function Navbar() {
             </li>
             <li className={styles.navItem}>
               <NavLink
-                exact
                 to="/contact"
                 className={styles.navLinks}
                 onClick={handleClick}
@@ -66,8 +64,7 @@ function Navbar() {
             </li>
             <li >
               <NavLink
-                exact
-                to="/contact"
+                to="/"
                 className={styles.navLinks}
                 onClick={handleClick}
               >
@@ -78,7 +75,7 @@ function Navbar() {
           <div className={styles.navIcon} onClick={handleClick}>
             {click ? (
               <span className={styles.icon}>
-                <CgClose />{" "}
+                <CgClose />
               </span>
             ) : (
               <span className={styles.icon}>

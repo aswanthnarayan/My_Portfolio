@@ -11,8 +11,8 @@ function App() {
   return (
     <Router>
       <Navbar/>
-      <div className={styles.app}>
-    <Home/>
+        <div className={styles.app}>
+         <Home/>
       </div>
     </Router>
   )
